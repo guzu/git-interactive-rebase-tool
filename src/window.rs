@@ -170,6 +170,7 @@ impl<'w> Window<'w> {
 			PancursesInput::Character(c) if c == 'd' => Input::Drop,
 			PancursesInput::Character(c) if c == 'j' => Input::SwapSelectedDown,
 			PancursesInput::Character(c) if c == 'k' => Input::SwapSelectedUp,
+			PancursesInput::KeyRight => Input::ShowCommit,
 			PancursesInput::KeyDown => Input::MoveCursorDown,
 			PancursesInput::KeyUp => Input::MoveCursorUp,
 			PancursesInput::KeyPPage => Input::MoveCursorPageUp,
